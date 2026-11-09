@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="icon" type="image/png" href="logo/logo.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-white text-dark">
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-light navbar-floating shadow-sm transition-all"
+    >
+      <div class="container-fluid px-3">
+        <a class="navbar-brand d-flex align-items-center m-0 p-0" href="#home">
+          <img src="logo/logo.png" alt="Logo Fauzi" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-medium fs-6 text-muted">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Keahlian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#music">Musik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Banner Section -->
+    <section id="home" class="hero-banner d-flex align-items-center">
+      <div class="container px-4 px-md-5">
+        <div class="row align-items-center">
+          <!-- Kolom Kiri -->
+          <div
+            class="col-lg-6 mb-5 mb-lg-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="badge border border-dark text-dark rounded-pill px-3 py-2 mb-4 d-inline-flex align-items-center"
+              style="font-size: 0.65rem; letter-spacing: 2px"
+            >
+              <span
+                class="bg-dark rounded-circle me-2"
+                style="width: 6px; height: 6px"
+              ></span>
+              PORTOFOLIO PRIBADI
+            </div>
+
+            <p class="fs-6 mb-2 text-muted">Halo, saya</p>
+
+            <h1
+              class="fw-bolder text-black mb-3 lh-sm"
+              style="font-size: 3.5rem; letter-spacing: -2px"
+            >
+              Muhammad Fauzi<br />Ba'il Naldi
+            </h1>
+
+            <h2 class="fs-4 text-secondary mb-4">
+              Saya seorang
+              <span id="typed-text" class="fw-bold text-black"></span
+              ><span class="cursor-blink">|</span>
+            </h2>
+
+            <p
+              class="mb-4 text-muted pe-lg-5"
+              style="font-weight: 300; font-size: 1.05rem; line-height: 1.8"
+            >
+              Membangun antarmuka pengguna yang minimalis, modern, dan aplikasi
+              web berkinerja tinggi.
+            </p>
+
+            <div class="mt-4 mb-5">
+              <a
+                href="#portfolio"
+                class="btn btn-dark px-4 py-2 me-3 shadow-sm d-inline-flex align-items-center"
+              >
+                Lihat Portofolio
+                <i
+                  class="bi bi-arrow-up-right ms-2"
+                  style="font-size: 0.9rem"
+                ></i>
+              </a>
+              <a href="#about" class="btn btn-outline-dark px-4 py-2"
+                >Profil Saya</a
+              >
+            </div>
+
+            <div
+              class="d-flex align-items-center mt-5 text-muted"
+              style="font-size: 0.65rem; letter-spacing: 2px; font-weight: 600"
+            >
+              <span
+                class="me-3"
+                style="width: 35px; height: 1px; background-color: #adb5bd"
+              ></span>
+              WEB DEVELOPMENT / SISTEM INFORMASI
+            </div>
+          </div>
+
+          <!-- Kolom Kanan Card Personal Profile -->
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div
+              class="p-4 bg-white rounded-4 shadow-sm border border-light position-relative overflow-hidden mx-auto"
+              style="max-width: 450px"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center mb-4 position-relative z-1"
+              >
+                <span
+                  class="text-muted fw-bold"
+                  style="font-size: 0.65rem; letter-spacing: 2px"
+                  >PERSONAL PROFILE</span
+                >
+              </div>
+              <div
+                class="position-relative z-1 mb-4 rounded-3 overflow-hidden bg-light border"
+                style="height: 250px"
+              >
+                <img
+                  src="logo/image.jpeg"
+                  alt="Profile Image"
+                  class="w-100 h-100"
+                  style="object-fit: cover; object-position: 80% 65%"
+                />
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center pt-3 border-top position-relative z-1"
+              >
+                <div>
+                  <span
+                    class="d-block text-muted mb-1 fw-bold"
+                    style="font-size: 0.65rem; letter-spacing: 2px"
+                    >FOCUS</span
+                  >
+                  <span class="fw-bold text-dark" style="font-size: 0.95rem"
+                    >Web & Frontend Development</span
+                  >
+                </div>
+                <!-- Icone -->
+                <div class="d-flex gap-2">
+                  <a
+                    href="mailto:mfauzibailn@gmail.com"
+                    class="border rounded-circle d-flex justify-content-center align-items-center text-dark text-decoration-none bg-light social-icon-hover"
+                    style="width: 35px; height: 35px"
+                    title="Email"
+                  >
+                    <i
+                      class="bi bi-envelope-fill"
+                      style="font-size: 0.9rem"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://wa.me/6281350394068"
+                    target="_blank"
+                    class="border rounded-circle d-flex justify-content-center align-items-center text-dark text-decoration-none bg-light social-icon-hover"
+                    style="width: 35px; height: 35px"
+                    title="WhatsApp"
+                  >
+                    <i class="bi bi-whatsapp" style="font-size: 0.9rem"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/muhammadfauzii_11/"
+                    target="_blank"
+                    class="border rounded-circle d-flex justify-content-center align-items-center text-dark text-decoration-none bg-light social-icon-hover"
+                    style="width: 35px; height: 35px"
+                    title="Instagram"
+                  >
+                    <i class="bi bi-instagram" style="font-size: 0.9rem"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container py-5 px-4 px-md-5">
+        <div class="row align-items-center">
+          <!-- Kolom Kiri -->
+          <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+            <h2 class="display-5 fw-bolder text-black mb-4">
+              Tentang Saya<span class="text-secondary">.</span>
+            </h2>
+            <p class="fs-5 text-dark" style="font-weight: 300; line-height: 2">
+              Saya adalah seorang Web Developer yang saat ini sedang menempuh
+              pendidikan S1 Sistem Informasi di
+              <strong>Universitas Budi Luhur</strong>. Saya memiliki minat besar
+              dalam arsitektur perangkat lunak, pengembangan antarmuka
+              (frontend), dan pembuatan sistem yang efisien dengan pendekatan
+              desain yang minimalis dan elegan.
+            </p>
+          </div>
+
+          <!-- Kolom Kanan -->
+          <div
+            class="col-lg-6 ps-lg-5"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-white p-4 p-md-5 rounded-4 shadow-sm border border-light"
+            >
+              <span
+                class="d-block text-muted mb-4 fw-bold"
+                style="font-size: 0.65rem; letter-spacing: 2px"
+                >AREA OF INTEREST</span
+              >
+              <div class="list-group list-group-flush mt-2">
+                <div
+                  class="list-group-item d-flex justify-content-between align-items-center py-4 px-0 bg-transparent"
+                >
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="text-muted me-4 fw-bold"
+                      style="font-size: 0.85rem"
+                      >01</span
+                    >
+                    <span class="fw-bold text-dark" style="font-size: 1rem"
+                      >Frontend Development</span
+                    >
+                  </div>
+                  <i class="bi bi-arrow-up-right text-muted"></i>
+                </div>
+                <div
+                  class="list-group-item d-flex justify-content-between align-items-center py-4 px-0 bg-transparent"
+                >
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="text-muted me-4 fw-bold"
+                      style="font-size: 0.85rem"
+                      >02</span
+                    >
+                    <span class="fw-bold text-dark" style="font-size: 1rem"
+                      >Software Architecture</span
+                    >
+                  </div>
+                  <i class="bi bi-arrow-up-right text-muted"></i>
+                </div>
+                <div
+                  class="list-group-item d-flex justify-content-between align-items-center py-4 px-0 bg-transparent border-bottom-0"
+                >
+                  <div class="d-flex align-items-center">
+                    <span
+                      class="text-muted me-4 fw-bold"
+                      style="font-size: 0.85rem"
+                      >03</span
+                    >
+                    <span class="fw-bold text-dark" style="font-size: 1rem"
+                      >Mobile App</span
+                    >
+                  </div>
+                  <i class="bi bi-arrow-up-right text-muted"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-white">
+      <div class="container py-5 px-4 px-md-5">
+        <div class="row mb-4" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 fw-bolder text-black">
+              Proyek & Portofolio<span class="text-secondary">.</span>
+            </h2>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Project 1 -->
+          <div class="timeline-item right" data-aos="fade-left">
+            <div class="timeline-dot"></div>
+            <div
+              class="timeline-content card h-100 card-custom border-dark rounded bg-white p-4"
+            >
+              <span class="text-muted small fw-bold d-block mb-2">2026</span>
+              <h4 class="card-title fw-bold text-black mb-1">Catat Utang</h4>
+              <h6 class="card-subtitle mb-3 text-dark fw-bold">
+                Aplikasi Mobile Cross-Platform
+              </h6>
+              <p class="card-text text-muted" style="font-size: 0.95rem">
+                Pengembangan aplikasi pencatatan keuangan berbasis offline-first
+                menggunakan Vue 3, Quasar Framework, dan RxDB. Dilengkapi dengan
+                fitur sinkronisasi ke Google Drive.
+              </p>
+              <div class="mt-4">
+                <span
+                  class="badge bg-white text-dark border border-dark fw-normal rounded-pill px-3"
+                  >Vue 3</span
+                >
+                <span
+                  class="badge bg-white text-dark border border-dark fw-normal rounded-pill px-3"
+                  >Quasar</span
+                >
+                <span
+                  class="badge bg-white text-dark border border-dark fw-normal rounded-pill px-3"
+                  >RxDB</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="timeline-item left" data-aos="fade-right">
+            <div class="timeline-dot"></div>
+            <div
+              class="timeline-content card h-100 card-custom border-dark rounded bg-white p-4"
+            >
+              <span class="text-muted small fw-bold d-block mb-2">2026</span>
+              <h4 class="card-title fw-bold text-black mb-1">
+                Mr. KIM Korean BBQ
+              </h4>
+              <h6 class="card-subtitle mb-3 text-dark fw-bold">
+                Website Perusahaan
+              </h6>
+              <p class="card-text text-muted" style="font-size: 0.95rem">
+                Merancang dan mengembangkan website resmi perusahaan
+                (mrkimkbbq.com yang masih aktif) menggunakan CMS WordPress dan
+                Elementor Pro dengan tipografi khusus Metrophobic.
+              </p>
+              <div class="mt-4">
+                <span
+                  class="badge bg-white text-dark border border-dark fw-normal rounded-pill px-3"
+                  >WordPress</span
+                >
+                <span
+                  class="badge bg-white text-dark border border-dark fw-normal rounded-pill px-3"
+                  >Elementor Pro</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light text-center">
+      <div class="container py-5 px-4 px-md-5">
+        <div class="row mb-5 text-start" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 fw-bolder text-black">
+              Keahlian Teknis<span class="text-secondary">.</span>
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 justify-content-center mx-auto"
+          style="max-width: 1100px"
+        >
+          <!-- HTML & CSS -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="50">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center gap-2 mb-2"
+              >
+                <i
+                  class="fa-brands fa-html5 display-4"
+                  style="color: #e34f26"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt display-4"
+                  style="color: #1572b6"
+                ></i>
+              </div>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">HTML & CSS</h6>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="100">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <i
+                class="fa-brands fa-js display-4 mb-2"
+                style="color: #f7df1e"
+              ></i>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">JavaScript</h6>
+            </div>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="150">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <svg
+                class="display-4 mb-2"
+                style="width: 48px; height: 48px; color: #06b6d4"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-8.4 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+                />
+              </svg>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">Tailwind CSS</h6>
+            </div>
+          </div>
+
+          <!-- Vue.js -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="200">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <i
+                class="fa-brands fa-vuejs display-4 mb-2"
+                style="color: #4fc08d"
+              ></i>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">Vue.js</h6>
+            </div>
+          </div>
+
+          <!-- Vite -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="250">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <svg
+                class="display-4 mb-2"
+                style="width: 48px; height: 48px"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-0.5 0 257 257"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+              >
+                <defs>
+                  <linearGradient
+                    x1="-0.828097821%"
+                    y1="7.6518539%"
+                    x2="57.6359644%"
+                    y2="78.4107719%"
+                    id="linearGradient-1"
+                  >
+                    <stop stop-color="#41D1FF" offset="0%"></stop>
+                    <stop stop-color="#BD34FE" offset="100%"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    x1="43.3760053%"
+                    y1="2.24179788%"
+                    x2="50.3158848%"
+                    y2="89.0299051%"
+                    id="linearGradient-2"
+                  >
+                    <stop stop-color="#FFEA83" offset="0%"></stop>
+                    <stop stop-color="#FFDD35" offset="8.33333%"></stop>
+                    <stop stop-color="#FFA800" offset="100%"></stop>
+                  </linearGradient>
+                </defs>
+                <g>
+                  <path
+                    d="M255.152904,37.937763 L134.896865,252.97646 C132.413943,257.416178 126.035075,257.442321 123.5149,253.02417 L0.87443175,37.9584812 C-1.87111536,33.1438084 2.24595371,27.3119153 7.70191187,28.2871109 L128.086639,49.8052023 C128.854587,49.9424525 129.640835,49.9411454 130.408783,49.8012155 L248.276014,28.3179595 C253.713738,27.3268821 257.850198,33.1136134 255.152904,37.937763 Z"
+                    fill="url(#linearGradient-1)"
+                  ></path>
+                  <path
+                    d="M185.432401,0.0631038902 L96.4393502,17.500942 C94.9766549,17.7875335 93.8936852,19.0270992 93.8054529,20.5146956 L88.3311293,112.971419 C88.2023755,115.149123 90.2023075,116.839261 92.3277254,116.349082 L117.10466,110.630976 C119.422882,110.096354 121.517582,112.138114 121.041128,114.469407 L113.67994,150.515893 C113.184532,152.941955 115.462232,155.016394 117.831433,154.29681 L133.134834,149.647295 C135.507302,148.927059 137.786963,151.00738 137.285019,153.435402 L125.586724,210.056351 C124.854723,213.598061 129.565674,215.529368 131.530313,212.49287 L132.842687,210.464834 L205.359174,65.745575 C206.573511,63.3224548 204.479465,60.5594769 201.818118,61.0730542 L176.31441,65.9952397 C173.91776,66.4573155 171.878614,64.2253653 172.555061,61.8805431 L189.2009,4.17570253 C189.878001,1.82692623 187.831665,-0.406957894 185.432401,0.0631038902 Z"
+                    fill="url(#linearGradient-2)"
+                  ></path>
+                </g>
+              </svg>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">Vite</h6>
+            </div>
+          </div>
+
+          <!-- Node JS -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="300">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <i
+                class="fa-brands fa-node-js display-4 mb-2"
+                style="color: #339933"
+              ></i>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">Node JS</h6>
+            </div>
+          </div>
+
+          <!-- Bootstrap -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="350">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <i
+                class="fa-brands fa-bootstrap display-4 mb-2"
+                style="color: #7952b3"
+              ></i>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">Bootstrap</h6>
+            </div>
+          </div>
+
+          <!-- Quasar -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="400">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <svg
+                class="display-4 mb-2"
+                style="width: 48px; height: 48px; color: #1976d2"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Quasar icon</title>
+                <path
+                  d="M14.34 12.001a2.342 2.342 0 0 1-4.683 0 2.342 2.342 0 0 1 4.684 0zm8.051-6a11.996 11.996 0 0 0-1.839-2.405l-2.707 1.562a9.002 9.002 0 0 0-2.825-1.637 11.107 11.107 0 0 0-2.187 3.12c3.012-.204 6.124.885 9.013 3.142l1.703-.983A11.969 11.969 0 0 0 22.39 6zm.001 12a11.99 11.99 0 0 0 1.162-2.796l-2.706-1.562c.202-1.091.2-2.198.005-3.266a11.112 11.112 0 0 0-3.796-.334c1.684 2.507 2.295 5.746 1.786 9.376l1.703.983A11.989 11.989 0 0 0 22.392 18zM12 24a11.968 11.968 0 0 0 3.002-.39v-3.126a9.024 9.024 0 0 0 2.83-1.629 11.102 11.102 0 0 0-1.609-3.454c-1.328 2.712-3.828 4.862-7.227 6.235v1.966c.98.26 1.99.392 3.004.397zM1.607 18a11.995 11.995 0 0 0 1.84 2.404l2.706-1.562a9.002 9.002 0 0 0 2.825 1.638 11.107 11.107 0 0 0 2.188-3.122c-3.013.206-6.124-.884-9.013-3.141L.45 15.2c.266.979.654 1.92 1.157 2.8zm0-12A11.99 11.99 0 0 0 .443 8.796L3.15 10.36a9.019 9.019 0 0 0-.005 3.265c1.273.332 2.546.445 3.796.334-1.683-2.507-2.296-5.746-1.785-9.376L3.453 3.6A11.994 11.994 0 0 0 1.606 6zm10.392-6a12.071 12.071 0 0 0-3.002.39v3.125a9.028 9.028 0 0 0-2.831 1.629 11.102 11.102 0 0 0 1.61 3.454c1.327-2.712 3.827-4.86 7.227-6.235V.398c-.98-.26-1.99-.392-3.004-.398z"
+                />
+              </svg>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">Quasar</h6>
+            </div>
+          </div>
+
+          <!-- Vercel -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="450">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <svg
+                class="display-4 mb-2"
+                style="width: 48px; height: 48px"
+                viewBox="0 0 24 24"
+                fill="black"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 2L24 22H0L12 2Z"
+                />
+              </svg>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">Vercel</h6>
+            </div>
+          </div>
+
+          <!-- WordPress -->
+          <div class="col" data-aos="zoom-in" data-aos-delay="500">
+            <div
+              class="p-4 rounded-4 text-center skill-box-modern h-100 d-flex flex-column justify-content-center align-items-center"
+            >
+              <i
+                class="fa-brands fa-wordpress display-4 mb-2"
+                style="color: #21759b"
+              ></i>
+              <h6 class="mt-2 fw-bold mb-0 text-dark">WordPress</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="py-5 bg-white">
+      <div class="container py-5 px-4 px-md-5">
+        <div class="row align-items-center">
+          <!-- Kolom Kiri -->
+          <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5" data-aos="fade-right">
+            <h2 class="display-5 fw-bolder text-black mb-3">
+              Musik Favorit<span class="text-secondary">.</span>
+            </h2>
+            <h3 class="fs-4 text-secondary mb-4">
+              Teman Setia Saat <span class="text-black fw-bold">Coding</span>
+            </h3>
+
+            <p class="fs-5 text-muted lh-lg mb-4" style="font-weight: 300">
+              Musik adalah bagian yang tidak terpisahkan dari alur kerja saya.
+              Daftar putar ini berisi kumpulan lagu pilihan yang menjaga fokus,
+              memberikan inspirasi, dan menemani saya saat menerjemahkan ide
+              kompleks menjadi baris kode yang fungsional.
+            </p>
+
+            <div class="d-flex align-items-center mt-4">
+              <a
+                href="https://open.spotify.com/playlist/2dUv6rJnH6RJMyDW7K927e"
+                target="_blank"
+                class="btn btn-dark px-4 py-2 rounded-3 me-3 shadow-sm"
+              >
+                <i class="bi bi-spotify me-2 text-success"></i>Buka di Spotify
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan -->
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="p-4 rounded-4 shadow-sm border border-light bg-light">
+              <h4 class="fw-bold mb-1 text-black">My Playlist</h4>
+              <br />
+              <div class="rounded-4 overflow-hidden shadow-sm">
+                <iframe
+                  data-testid="embed-iframe"
+                  style="border-radius: 12px; display: block"
+                  src="https://open.spotify.com/embed/playlist/2dUv6rJnH6RJMyDW7K927e?utm_source=generator&theme=0&si=77560dfc1e7d4abf"
+                  width="100%"
+                  height="352"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    fullscreen;
+                    picture-in-picture;
+                  "
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light text-start">
+      <div class="container py-5 px-4 px-md-5">
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-12">
+            <h2 class="display-5 fw-bolder text-black">
+              Hubungi Saya<span class="text-secondary">.</span>
+            </h2>
+            <p class="text-muted fs-5 mt-2">
+              Jangan ragu untuk menyapa atau mendiskusikan proyek baru.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-5 align-items-stretch">
+          <!-- Kolom Kiri -->
+          <div
+            class="col-lg-4 d-flex flex-column gap-4"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <!-- Card Email -->
+            <div
+              class="p-4 bg-white text-dark rounded-4 shadow-sm border h-100 d-flex flex-column justify-content-between skill-box-modern"
+            >
+              <div class="d-flex align-items-center mb-3">
+                <div
+                  class="bg-light border text-dark rounded-circle d-flex justify-content-center align-items-center me-3"
+                  style="width: 45px; height: 45px"
+                >
+                  <i class="bi bi-envelope-fill fs-5"></i>
+                </div>
+                <span
+                  class="fw-bold text-muted"
+                  style="font-size: 0.85rem; letter-spacing: 1px"
+                  >KIRIM EMAIL</span
+                >
+              </div>
+              <h4
+                class="fw-bold mb-3"
+                style="
+                  font-family: &quot;Space Grotesk&quot;, sans-serif;
+                  font-size: 1.1rem;
+                  word-break: break-all;
+                "
+              >
+                mfauzibailn@gmail.com
+              </h4>
+              <a
+                href="mailto:mfauzibailn@gmail.com"
+                class="btn btn-outline-dark rounded-pill w-100 fw-bold fs-6"
+                >Kirim Pesan</a
+              >
+            </div>
+
+            <!-- Card WhatsApp -->
+            <div
+              class="p-4 bg-white text-dark rounded-4 shadow-sm border h-100 d-flex flex-column justify-content-between skill-box-modern"
+            >
+              <div class="d-flex align-items-center mb-3">
+                <div
+                  class="bg-light border text-dark rounded-circle d-flex justify-content-center align-items-center me-3"
+                  style="width: 45px; height: 45px"
+                >
+                  <i class="bi bi-whatsapp fs-5"></i>
+                </div>
+                <span
+                  class="fw-bold text-muted"
+                  style="font-size: 0.85rem; letter-spacing: 1px"
+                  >WHATSAPP</span
+                >
+              </div>
+              <h4
+                class="fw-bold mb-3 fs-5"
+                style="font-family: &quot;Space Grotesk&quot;, sans-serif"
+              >
+                +62 813-5039-4068
+              </h4>
+              <a
+                href="https://wa.me/6281350394068"
+                target="_blank"
+                class="btn btn-outline-dark rounded-pill w-100 fw-bold fs-6"
+                >Chat Sekarang</a
+              >
+            </div>
+
+            <!-- Card Instagram -->
+            <div
+              class="p-4 bg-white text-dark rounded-4 shadow-sm border h-100 d-flex flex-column justify-content-between skill-box-modern"
+            >
+              <div class="d-flex align-items-center mb-3">
+                <div
+                  class="bg-light border text-dark rounded-circle d-flex justify-content-center align-items-center me-3"
+                  style="width: 45px; height: 45px"
+                >
+                  <i class="bi bi-instagram fs-5"></i>
+                </div>
+                <span
+                  class="fw-bold text-muted"
+                  style="font-size: 0.85rem; letter-spacing: 1px"
+                  >INSTAGRAM</span
+                >
+              </div>
+              <h4
+                class="fw-bold mb-3 fs-5"
+                style="font-family: &quot;Space Grotesk&quot;, sans-serif"
+              >
+                @muhammadfauzii_11
+              </h4>
+              <a
+                href="https://www.instagram.com/muhammadfauzii_11/"
+                target="_blank"
+                class="btn btn-outline-dark rounded-pill w-100 fw-bold fs-6"
+                >Kunjungi Profil</a
+              >
+            </div>
+          </div>
+
+          <!-- Form  -->
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border h-100">
+              <form>
+                <div class="row g-4 mb-4">
+                  <!-- Nama -->
+                  <div class="col-12">
+                    <div class="input-group">
+                      <span
+                        class="input-group-text bg-transparent border-end-0 rounded-start-pill ps-4 text-muted"
+                      >
+                        <i class="bi bi-person"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="form-control border-start-0 rounded-end-pill py-3 px-3 shadow-none bg-transparent"
+                        placeholder="Nama Lengkap"
+                      />
+                    </div>
+                  </div>
+                  <!-- Email & Phone -->
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span
+                        class="input-group-text bg-transparent border-end-0 rounded-start-pill ps-4 text-muted"
+                      >
+                        <i class="bi bi-envelope"></i>
+                      </span>
+                      <input
+                        type="email"
+                        class="form-control border-start-0 rounded-end-pill py-3 px-3 shadow-none bg-transparent"
+                        placeholder="Alamat Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <span
+                        class="input-group-text bg-transparent border-end-0 rounded-start-pill ps-4 text-muted"
+                      >
+                        <i class="bi bi-telephone"></i>
+                      </span>
+                      <input
+                        type="tel"
+                        class="form-control border-start-0 rounded-end-pill py-3 px-3 shadow-none bg-transparent"
+                        placeholder="Nomor Handphone"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <textarea
+                    class="form-control rounded-4 p-4 shadow-none bg-transparent border"
+                    rows="6"
+                    placeholder="Tulis pesan Anda di sini..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-dark rounded-pill py-3 px-5 w-100 fw-bold fs-5"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-4 mt-5">
+      <p class="mb-0 text-white-50">
+        &copy; 2026 Muhammad Fauzi Ba'il Naldi.
+      </p>
+    </footer>
+
+    <!-- Bootstrap, AOS JS & Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
